@@ -226,8 +226,6 @@ elif nav == "📬 Contact":
 
     col1, col2 = st.columns([0.6, 0.4])
     with col1:
-        st.markdown(f"**Nom :** {PROFILE['name']}")
-        st.markdown(f"**Titre :** {PROFILE['title']}")
         st.markdown(f"**Email :** [{PROFILE['email']}](mailto:{PROFILE['email']})")
         st.markdown(f"**Téléphone :** {PROFILE['phone']}")
         st.markdown(f"**LinkedIn :** [{PROFILE['linkedin']}]({PROFILE['linkedin']})")
@@ -236,10 +234,7 @@ elif nav == "📬 Contact":
             st.download_button("Télécharger mon CV", data=None, file_name="CV_Adaï_Joseph_Térence.pdf", disabled=True)
             st.caption("(Ajoute l’URL de ton CV dans PROFILE['cv_url'] pour activer un bouton dédié dans la barre latérale.)")
 
-    with col2:
-        st.info(
-            "Disponible pour un **stage Business Analyst Junior (6 mois)** à partir du 01 septembre 2025.")
-        st.write(":spiral_calendar: Dernière mise à jour : ", date.today().strftime('%d/%m/%Y'))
+
 
     st.divider()
     st.write("\nMerci pour votre visite ! N’hésitez pas à me contacter pour toute collaboration 🚀")
